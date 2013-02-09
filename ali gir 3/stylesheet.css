@@ -1,0 +1,127 @@
+*{
+	padding: 0;
+	margin-top: 0;
+}
+.badboy{
+	float: none !important;
+	clear: both !important;
+	overflow: hidden !important;
+	width: 0 !important;
+	min-width: 0 !important;
+	height: 0 !important;
+	min-height: 0 !important;
+	border: none !important;
+	outline: none !important;
+}
+.leftpanel{
+	float: left;
+}
+.rightpanel{
+	float: right;
+}
+header,
+div.content,
+footer{
+	outline:1px dashed blue;
+	padding-top: 1px;/* zedloos method */
+}
+header > div,
+div.content > div,
+footer > div{
+	outline:1px dashed red;
+}
+header > div > div,
+div.content > div > div,
+footer > div > div{
+	outline:1px dashed #390;
+}
+div.exterawidth{
+	outline:none !important;
+	border:none !important;
+	width: 1100px;
+}
+div.host{
+	float: left;
+	outline: 1px dashed #390;
+}
+body{
+	background-image:url("images/backguid2.jpg");
+	background-position:center top;
+	background-repeat:no-repeat;
+}
+div.container{
+	width: 950px;
+	height: 1200px;/* vase namayesh kamel aks dar avale kar. */
+	margin: 0 auto;
+}
+/*--------------------------- start header ------------------------------*/
+header{
+	height: 205px;
+}
+header > div.leftpanel{
+	width: 170px;
+	height: 170px;
+	margin: 20px 0 0 70px;
+}
+header > div.rightpanel{
+	height: 170px;
+	float: none !important;
+	margin-top: 20px;
+	margin-left: 300px;
+}
+header > div.rightpanel > div.menu{
+	width: 550px;
+	height: 50px;
+}
+header > div.rightpanel > div.menucontent{
+	width: 650px;
+	height: 115px;
+}
+/*--------------------------- end of header -----------------------------*/
+
+/*--------------------------- start content -----------------------------*/
+div.content{
+	height: 646px;
+}
+div.content > div.slider{
+	height: 325px;
+}
+div.content > div.partycontent{
+	height: 320px;
+	overflow: hidden;
+}
+div .partycontent div.host{
+	width: 310px;
+	height: 300px;
+	margin-right: 6px;
+}
+/*--------------------------- end of content ----------------------------*/
+
+/*--------------------------- start footer ------------------------------*/
+footer{
+	height: 350px;
+}
+div.topfooter{
+	height: 247px;
+}
+div.topfooter div.host{
+	width: 227px;
+	height: 200px;
+	margin: 15px 13px 0 0;
+}
+div.bottomfooter{
+	height: 102px;
+}
+div.copyright{
+	float: left;
+	width: 300px;
+	height: 40px;
+	margin-top: 20px;
+}
+div.contact{
+	float: right;
+	width: 500px;
+	height: 70px;
+	margin-top: 20px;
+}
+/*--------------------------- end of footer ------------------------------*/
