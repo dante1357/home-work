@@ -1,0 +1,122 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #CCC;
+}
+div{
+	text-align: center;
+	color: #FFF;
+	font-size: 18px;
+	}
+	div.header,
+div.floor1,
+div.floor2,
+div.floor3,
+div.floor4,
+div.floor5,
+div.floor6,
+div.footer{
+	margin-top: 10px;
+	padding: 1px 0;
+	background: #777;
+	overflow: hidden;
+}
+div.badboy{
+	float: none !important;
+	overflow: hidden !important;
+	clear: both !important;
+	width: 0 !important;
+	height: 0 !important;
+	min-height: 0 !important;
+	min-width: 0 !important;
+	border:none !important;
+	outline: none !important;
+}
+div.container{
+	margin: 0 auto;
+	background: #aaa;
+	width: 950px;
+}
+div.header{
+	height: 100px;
+}
+div.floor1 div#left-host{
+	float: left;
+	width: 130px;
+	height: 300px;
+	background: #093;
+}
+div.floor1 div#right-host{
+	float: right;
+	width: 130px;
+	height: 230px;
+	background: #039;
+}
+div.floor1 div#gest{
+	margin: 0px 140px;
+	height: 270px;
+	background: #903;
+}
+div.floor2 div.left-host{
+	float: left;
+	width: 130px;
+	height: 230px;
+	margin-right: 6px;
+	background: #093;
+}
+div.floor2 div#gest{
+	margin-left: 271px;
+	background: #903;
+	height: 200px;
+}
+div.floor3 div.left-host{
+	width: 110px;
+	float: left;
+	background: #039;
+	height: 230px;
+	margin-right: 5px;
+}
+div.floor3 div#gest{
+	margin-left: 460px;
+	background: #903;
+	height: 200px;
+}
+div.floor4 div.host{
+	float: left;
+	width: 110px;
+	background: #093;
+	margin-right: 5px;
+	height: 230px;
+}
+div.floor4 div#gest{
+	margin-left: 805px;
+	background: #903;
+	height: 200px;
+}
+div.floor5 div.host{
+	float: right;
+	margin-left: 5px;
+	width: 110px;
+	height: 230px;
+	background: #903;
+}
+div.floor5 div#gest{
+	margin-right: 805px;
+	background: #093;
+	height: 200px;
+}
+div.floor6 div.extra-width{
+	width: 1000px;
+}
+div.extra-width div.host{
+	float: left;
+	width: 111px;
+	background: #039;
+	margin-left: 7px;
+	height: 200px;
+}
+div.footer{
+	height: 100px;
+}
