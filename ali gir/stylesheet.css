@@ -1,0 +1,174 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.badboy{
+	float: none !important;
+	clear: both !important;
+	overflow: hidden !important;
+	width: 0 !important;
+	height: 0 !important;
+	min-width: 0 !important;
+	min-height: 0 !important;
+	border:none !important;
+	outline:none !important;
+}
+header,
+div.content,
+footer{
+	padding-top: 1px;
+	outline: 1px dotted blue;
+}
+header > div,
+div.content > div,
+footer > div {
+	padding-top: 1px;
+	outline: 1px dotted red;
+}
+header > div > div,
+div.content > div > div,
+footer > div > div {
+	outline: 1px dotted #390;
+}
+.leftpanel{
+	float: left;
+}
+.rightpanel{
+	float: right;
+}
+body{
+	background-image:url('images/backsite.jpg');
+	background-position:center top;
+	background-repeat:no-repeat;	
+}
+div.container{
+	width: 970px;
+	margin:0 auto;
+}
+/* ------------------------ start of header ------------------------- */
+header{
+	height: 555px;
+}
+
+/* ----------- start of banner ----------- */
+div.banner{
+	height: 105px;
+}
+div.banner > div.leftpanel{
+	width: 200px;
+	height: 100px;
+}
+div.banner > div.rightpanel{
+	width: 300px;
+	height: 50px;
+	margin-top: 50px;
+}
+/* ------------ end of banner ------------ */
+
+/* ------------ start of menu ------------ */
+div.menu{
+	height: 47px;
+}
+div.menu > div.rightpanel{
+	width: 210px;
+	margin: 5px 20px 0 0;
+	height: 40px;
+}
+div.menu > div.leftpanel{
+	float: none;
+	margin: 2px 300px 2px 0;
+	height: 43px;
+}
+/* ------------- end of menu ------------- */
+
+/* ------------ start of slider ---------- */
+div.slider{
+	height: 400px;
+}
+/* ------------ end of slider ------------ */
+
+/* -------------------------- end of header ------------------------- */
+
+/* ----------------------- start of content ------------------------- */
+div.content{
+	height: 455px;
+}
+/* ---------- start of topcontent ------------ */
+div.topcontent{
+	height: 100px;
+}
+div.topcontent > div.rightpanel{
+	height: 75px;
+	width: 120px;
+	margin: 10px 30px 0 0;
+}
+div.topcontent > div.leftpanel{
+	float: none !important;
+	margin: 5px 155px 0 0;
+	height: 90px;
+}
+/* ------------ end of topcontent ------------ */
+
+/* ---------- start of centercontent --------- */
+div.centercontent{
+	height: 350px;
+	overflow: hidden;
+}
+div.centercontent > div.exterawidth{
+	width: 1000px;
+	outline: none !important;
+	border: none !important;
+}
+div.exterawidth > div.leftpanel{
+	width: 230px;
+	height: 330px;
+	outline: 1px dotted #390;
+	margin: 10px 0 0 10px;
+}
+/* ------------ end of centercontent --------- */
+
+/* -------------------------- end of content ------------------------- */
+
+/* ------------------------ start of footer -------------------------- */
+footer{
+	height: 275px;
+}
+
+/* ---------- start of topfooter ------------ */
+div.topfooter{
+	height: 230px;
+}
+div.topfooter > div.leftpanel{
+	width: 165px;
+	height: 205px;
+	margin: 20px 0 0 10px;
+}
+div.topfooter > div.rightpanel{
+	width: 165px;
+	height: 205px;
+	margin: 20px 12px 0 0;
+}
+div.topfooter > div.centerpanel{
+	margin: 20px 170px 0 170px;
+	height: 205px;
+}
+div.centerpanel > div.leftpanel{
+	width: 300px;
+	height: 205px;
+	outline: 1px dashed yellow;
+}
+div.centerpanel > div.rightpanel{
+	float: none !important;
+	width: 300px;
+	height: 205px;
+	outline: 1px dashed yellow;
+	margin-left: 313px;
+}
+/* ------------ end of topfooter ------------ */
+
+/* ---------- start of copyright ------------ */
+div.copyright{
+	height: 40px;
+}
+/* ------------ end of copyright ------------ */
+/* ------------------------ end of footer ---------------------- */
