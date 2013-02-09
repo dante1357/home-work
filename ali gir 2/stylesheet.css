@@ -1,0 +1,93 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.badboy{
+	float: none !important;
+	overflow: hidden !important;
+	clear: both !important;
+	width: 0 !important;
+	height: 0 !important;
+	min-height: 0 !important;
+	min-width: 0 !important;
+	border:none !important;
+	outline:none !important;
+}
+.leftpanel{
+	float: left;
+}
+.rightpanel{
+	float: right;
+}
+header,
+div.content,
+footer{
+	outline:1px dashed blue;
+	padding-top: 1px;
+}
+header > div,
+div.content > div,
+footer > div{
+	outline:1px dashed red;
+}
+body{
+	background-image:url("images/backguid.jpg");
+	background-position:center top;
+	background-repeat:no-repeat;
+}
+div.container{
+	height: 880px;
+	margin: 0 auto;
+	width: 950px;
+}
+/* -------------------------- start of header -------------------------- */
+header{
+	height: 135px;
+}
+header > div.leftpanel{
+	width: 350px;
+	height: 40px;
+	margin: 50px 0 0 10px;
+}
+header > div.rightpanel{
+	width: 350px;
+	height: 40px;
+	margin: 50px 10px 0 0;
+}
+header > div.logo{
+	width: 150px;
+	height: 135px;
+	margin: 0px auto;
+}
+/* -------------------------- end of header ---------------------------- */
+
+/* -------------------------- start of content ------------------------- */
+div.content{
+	height: 525px;
+}
+div.content > div.rightpanel{
+	width: 400px;
+	height: 450px;
+}
+div.content > div.leftpanel{
+	float: none !important;
+	margin: 30px 450px 0 0;
+	height: 400px;
+}
+/* -------------------------- end of content---------------------------- */
+
+/* -------------------------- start of footer -------------------------- */
+footer{
+	height: 205px;
+}
+footer > div.footerlogo{
+	height: 70px;
+	margin-top: 30px;
+}
+footer > div.footerlinks{
+	height: 50px;
+}
+footer > div.copyright{
+	height: 50px;
+}
+/* --------------------------- end of footer --------------------------- */
