@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>test badboy</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		div.container{
+			width: 950px;
+			margin: 0 auto;
+		}
+		div.floor1,div.floor2{
+			background: #666;
+			padding-top:1px;
+			margin-top:10px;
+		}
+		div.badboy{
+			width: 0 !important;
+			min-width: 0!important;
+			height: 0!important;
+			min-height: 0!important;
+			float:none!important;
+			clear: both!important;
+			overflow: hidden!important;
+		}
+		div.floor1 div.host{
+			float:left;
+			border:1px solid red;
+			width: 150px;
+			height: 400px;
+		}
+		div.floor1 div.gest{
+			margin-left:160px;
+			height: 350px;
+			border:1px solid red;
+			margin-top:20px;
+		}
+		div.floor2 div.host{
+			float:right;
+			width: 150px;
+			height: 400px;
+			border:1px solid red;
+		}
+		div.floor2 div.gest{
+			border:1px solid red;
+			margin-right:160px;
+			height: 350px;
+			margin-top:15px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="floor1">
+			<div class="host">leftpanel(host)</div>
+			<div class="gest">rightpanel(gest)</div>
+			<div class="badboy"></div>
+		</div>
+		<div class="floor2">
+			<div class="host">rightpanel(host)</div>
+			<div class="gest">leftpanel(gest)</div>
+			<div class="badboy"></div>
+		</div>
+	</div>
+</body>
+</html>

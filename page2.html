@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>test2</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		div.container{
+			width: 950px;
+			margin: 0 auto;
+		}
+		div.floor1,div.floor2{
+			float: left;
+			background: #666;
+			padding-top:1px;
+			margin-top:10px;
+			clear: both;
+			width:100%;
+		}
+		div.floor1 div.host{
+			background: #370;
+			float:left;
+			width: 250px;
+			min-height:400px;
+		}
+		div.floor1 div.gest{
+			margin-left:270px;
+			min-height:350px;
+			background:#730;
+			margin-top:20px;
+		}
+		div.floor2 div.host{
+			background: #370;
+			float:right;
+			width: 250px;
+			min-height:400px;
+		}
+		div.floor2 div.gest{
+			margin-right:270px;
+			min-height:350px;
+			background:#730;
+			margin-top:10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="floor1">
+			<div class="host">leftpanel(host)</div>
+			<div class="gest">right(gest)</div>
+		</div>
+		<div class="floor2">
+			<div class="host">right(host)</div>
+			<div class="gest">leftpanel(gest)</div>
+		</div>
+	</div>
+</body>
+</html>
