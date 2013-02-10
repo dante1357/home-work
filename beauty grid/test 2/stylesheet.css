@@ -1,0 +1,22 @@
+body{
+	background-color: #aaa;
+}
+header,
+div.floor1,
+div.floor2,
+div.floor3,
+div.floor4,
+div.floor5,
+footer{
+	outline: 2px dashed black;
+	margin-top: 20px;
+}
+section.host{
+	background: #390;
+	min-height: 300px;
+}
+section.guest{
+	min-height: 240px;
+	background: #903;
+	margin-top: 10px;
+}
