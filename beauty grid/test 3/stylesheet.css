@@ -1,0 +1,25 @@
+body{
+	background-color: #f4f4f4;
+}
+div.container{
+	background-image:url("images/backguid.jpg");
+	background-position:center top;
+	background-repeat:no-repeat;
+	padding: 0 10px;
+	outline: 2px dashed black;
+}
+div.container > *{
+	outline:2px dotted red;
+}
+div.container > * > *{
+	outline:1px dashed blue;
+}
+div.container > * >* *{
+	outline:2px dotted #390;
+}
+div.content{
+	min-height: 528px;
+}
+div.content > figure{
+	min-height:430px;
+}
