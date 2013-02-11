@@ -1,0 +1,25 @@
+body{
+	background-color: #eee;
+}
+div.container{
+	background-image: url("images/backsite.jpg");
+	background-position: center top;
+	background-repeat: no-repeat;
+	min-height: 1215px;
+}
+div.container > *{
+	outline: 2px dotted blue;
+	margin-bottom: 5px;
+}
+div.container > * > *{
+	outline: 1px dashed red;
+}
+div.container > * > * *{
+	outline: 2px solid #390;
+}
+div.clicks{
+	width: 105px;
+	margin-left: 10px;
+	height: 20px;
+	margin-top: 5px;
+}
