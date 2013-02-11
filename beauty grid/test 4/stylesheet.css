@@ -1,0 +1,21 @@
+body{
+	background-color: #dfdfdf;
+}
+div.container{
+	background-image: url("images/backsite.jpg");
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+div.container > *{
+	outline: 2px dotted blue;
+	margin-bottom: 5px;
+}
+div.container > * > *{
+	outline: 1px dashed red;
+}
+div.container > * > * *{
+	outline: 2px solid #390;
+}
+div.slider{
+	min-height: 393px;
+}
