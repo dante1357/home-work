@@ -1,0 +1,24 @@
+body{
+	background-image:url("images/backguid.jpg");
+	background-position:center top;
+	background-repeat:no-repeat;
+}
+body > * {
+	outline: 2px dashed red;
+}
+body > * > *{
+	outline: 2px dotted blue;
+}
+body > * > * *{
+	outline: 1px dashed #390;
+}
+section.slider{
+	margin-top: 5px;
+	min-height: 440px;
+}
+section.content{
+	margin-bottom: 15px;
+}
+section.bottom{
+	margin-right: 40px;
+}
