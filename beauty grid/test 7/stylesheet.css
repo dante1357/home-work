@@ -1,0 +1,32 @@
+body{
+	background-image:url("images/backguid.png");
+	background-position:center top;
+	background-repeat:no-repeat;
+}
+body > *{
+	outline: 1px dashed black;
+}
+body > * > *{
+	outline: 1px dashed red;
+}
+body > * > * *{
+	outline: 1px dotted #390;
+}
+p.offer{
+	margin-left: 15px;
+	margin-right: 15px;
+}
+a.read{
+	margin-left: 135px;
+	margin-right: 15px;
+}
+figure.column{
+	margin-left: 17px;
+}
+div.column{
+	width: 460px;
+}
+a.column{
+	margin-right: 15px;
+	margin-top: 5px;
+}
