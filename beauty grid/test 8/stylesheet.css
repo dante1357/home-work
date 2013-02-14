@@ -1,0 +1,262 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.badboy{
+	overflow: hidden !important;
+	clear: both !important;
+	float: none !important;
+	width: 0 !important;
+	min-width: 0 !important;
+	height: 0 !important;
+	min-height: 0 !important;
+	border:none !important;
+	outline:none !important;
+}
+.leftpanel{
+	float: left;
+}
+.rightpanel{
+	float: right;
+}
+body{
+	background-image:url("images/backguid.png");
+	background-repeat:no-repeat;
+	background-position:center top;
+}
+div.container{
+	outline:1px dotted magenta;
+}
+div.container > * {
+	outline:2px dotted black;
+}
+div.container > * > *{
+	outline: 1px dashed red;
+	width: 950px;
+	margin:0 auto;
+}
+div.container > * > * *{
+	outline:1px dashed #390;
+}
+/* ************************** start of header *************************** */
+header h1{
+	min-height: 120px;
+	width: 0;
+	padding-left: 190px;
+	float: left;
+	overflow: hidden;
+}
+header > div > div.ContactMenu{
+	width: 540px;
+	margin-left: auto;
+	min-height: 120px;
+}
+div.ContactMenu > div{
+	width: 210px;
+	margin-top: 10px;
+	min-height: 70px;
+	float: right;
+}
+div.ContactMenu > nav{
+	width: 540px;
+	min-height: 25px;
+	float: left;
+	margin-top: 10px;
+}
+/* ******************** start of section.Slider ********************** */
+section.slider{
+	min-height: 395px;
+	margin-top: 5px;
+}
+/* ******************** start of section.TopContent ********************** */
+section.TopContent > div{
+	min-height: 215px;
+	padding-top: 1px;/* zedloos */
+}
+section.TopContent > div > section{
+	float: right;
+	width: 260px;
+	min-height: 140px;
+	margin-top: 40px;
+}
+section.TopContent > div > article{
+	margin-right: 270px;
+	min-height: 160px;
+	margin-top: 20px;
+}
+section.TopContent h2{
+	margin-top: 35px;
+	font-size: 34px;
+	padding-left: 10px;
+}
+section.TopContent p{
+	padding-top: 9px;
+	padding-left: 10px;
+	min-height: 40px;
+}
+/* ******************* start of section.CenterContent ******************** */
+section.CenterContent > div{
+	padding-top: 1px; /* zedloos */
+}
+section.floor3{
+	margin-top: 20px;
+	padding-top: 1px; /* zedloos */
+}
+section.floor3 > article.leftpanel{
+	min-height: 280px;
+	width: 230px;
+	margin-right: 10px;
+}
+section.floor3 > article.guest{
+	min-height: 280px;
+	margin-left: 720px;
+	padding-top: 1px; /* zedloos */
+}
+section.floor3 figure{
+	margin:5px auto;
+	width: 95px;
+	min-height: 90px;
+}
+section.floor3 h2{
+	margin-top: 15px;
+	text-align:center;
+	font-size:22px;
+}
+section.floor3 p{
+	min-height: 105px;
+	padding: 5px 0 0 10px;
+}
+section.floor3 a{
+	float: right;
+	margin: 5px 30px 0 0 ;
+}
+section.floor2{
+	margin-top: 25px;
+}
+section.floor2 > p{
+	min-height: 50px;
+	width: 920px;
+	margin: 0 auto;
+}
+section.floor1{
+	margin-top: 50px;
+	min-height: 290px;
+}
+section.floor1 > article{
+	float: left;
+	width: 310px;
+	padding-left: 10px;
+	min-height: 250px;
+}
+section.floor1 > article h3{
+	font-size:26px;
+}
+section.floor1 > article ul{
+	margin-top: 20px;
+	padding-left: 40px;
+}
+section.floor1 > article li{
+	min-height: 24px;
+	margin-bottom: 10px;
+	list-style-type: circle;
+}
+section.floor1 > div{
+	margin-left: 330px;
+	min-height: 280px;
+	padding-left: 5px;
+}
+section.floor1 > div h3{
+	font-size:26px;
+	margin-bottom: 5px;
+}
+section.floor1 > div div{
+	min-height: 118px;
+	padding-top: 1px;
+}
+section.floor1 figure.leftpanel{
+	margin:10px 5px 0 0;
+	width: 150px;
+	min-height: 100px;
+}
+article.column {
+	min-height: 100px;
+}
+article.column h4{
+	margin: 10px 0 0 165px;
+}
+article.column p{
+	margin-left: 165px;
+	min-height: 55px;
+}
+article.column a{
+	display:block;
+	margin-top: 5px;
+	margin-left: 520px;
+}
+/* ****************** start of section.BottomContent ********************* */
+section.BottomContent > div{
+	padding-top: 1px; /* zedloos */
+}
+section.BottomContent article.leftpanel{
+	width: 220px;
+	margin-right: 20px;
+	min-height: 265px;
+}
+section.BottomContent article.guest{
+	width: 220px;
+	margin-left: 720px;
+	min-height: 265px;
+	padding-top: 1px; /* zedloos */
+}
+section.BottomContent article.leftpanel > h3{
+	font-size: 24px;
+	margin-top: 30px;
+	padding-left: 12px;
+	min-height: 30px;
+}
+section.BottomContent article.leftpanel > h4{
+	padding-left: 15px;
+	margin-top: 7px;
+}
+section.BottomContent article.leftpanel > p{
+	min-height: 60px;
+	padding-left: 12px;
+	padding-top: 5px;
+}
+section.BottomContent article.leftpanel > div{
+	min-height: 50px;
+}
+section.BottomContent article.guest > h3{
+	font-size: 24px;
+	margin-top: 30px;
+	padding-left: 12px;
+	min-height: 30px;
+}
+section.BottomContent article.guest > p{
+	min-height: 120px;
+	padding-left: 12px;
+	padding-top: 5px;
+}
+section.BottomContent article.guest > p#br{
+	min-height: 40px;
+}
+section.BottomContent h3.h3Changes{
+	margin-top: 20px !important;
+}
+section.BottomContent h4.h4Changes{
+	min-height: 20px;
+}
+/* *************************  end of Contents **************************** */
+footer > div{
+	min-height: 40px;
+	padding-top: 1px; /* zedloos */
+}
+footer > div > a{
+	float: right;
+	margin-top: 15px;
+}
+footer > div > article{
+	width: 435px;
+	min-height: 40px;
+	margin-right: auto;
+}
