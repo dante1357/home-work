@@ -17,12 +17,12 @@ div.hrhand{
 	position: absolute;
 	left: 285px;
 	-webkit-animation-name:clock;
-	-webkit-animation-duration:216000s;
+	-webkit-animation-duration:43200s43200s;
 	-webkit-animation-timing-function:linear;
 	-webkit-animation-iteration-count:infinite;
 	-webkit-animation-direction:normal;
 	-moz-animation-name:clock;
-	-moz-animation-duration:216000;
+	-moz-animation-duration:43200s;
 	-moz-animation-timing-function:linear;
 	-moz-animation-iteration-count:infinite;
 	-moz-animation-direction:normal;
