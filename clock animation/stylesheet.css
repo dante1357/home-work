@@ -1,0 +1,75 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+div.clock{
+	background-image: url("images/clockface.jpg");
+	background-repeat: no-repeat;
+	height: 600px;
+	width: 600px;
+	position: relative;
+}
+div.hrhand{
+	background-image: url("images/hourhand.png");
+	background-repeat: no-repeat;
+	min-height: 600px;
+	width: 30px;
+	position: absolute;
+	left: 285px;
+	-webkit-animation-name:clock;
+	-webkit-animation-duration:216000s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:normal;
+	-moz-animation-name:clock;
+	-moz-animation-duration:216000;
+	-moz-animation-timing-function:linear;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-direction:normal;
+}
+div.minhand{
+	background-image: url("images/minhand.png");
+	background-repeat: no-repeat;
+	min-height: 600px;
+	width: 30px;
+	z-index: 2;
+	position: absolute;
+	left: 285px;
+	-webkit-animation-name:clock;
+	-webkit-animation-duration:3600s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:normal;
+	-moz-animation-name:clock;
+	-moz-animation-duration:3600s;
+	-moz-animation-timing-function:linear;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-direction:normal;
+}
+div.sechand{
+	background-image: url("images/sechand.png");
+	background-repeat: no-repeat;
+	min-height: 600px;
+	width: 30px;
+	z-index: 3;
+	position: absolute;
+	left: 285px;
+	-webkit-animation-name:clock;
+	-webkit-animation-duration:60s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:normal;
+	-moz-animation-name:clock;
+	-moz-animation-duration:60s;
+	-moz-animation-timing-function:linear;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-direction:normal;
+}
+@-webkit-keyframes clock{
+	0%{-webkit-transform: rotate(0deg);}
+	100%{-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes clock{
+	0%{-moz-transform: rotate(0deg);}
+	100%{-moz-transform: rotate(360deg);}
+}
