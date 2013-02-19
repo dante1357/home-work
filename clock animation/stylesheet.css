@@ -17,7 +17,7 @@ div.hrhand{
 	position: absolute;
 	left: 285px;
 	-webkit-animation-name:clock;
-	-webkit-animation-duration:43200s43200s;
+	-webkit-animation-duration:43200s;
 	-webkit-animation-timing-function:linear;
 	-webkit-animation-iteration-count:infinite;
 	-webkit-animation-direction:normal;
