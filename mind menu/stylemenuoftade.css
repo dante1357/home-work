@@ -28,6 +28,11 @@ nav menu{
 	padding-top: 50px;
 	height: 270px;
 	padding-bottom: 10px;
+	-webkit-transition:margin-top 1s;
+	   -moz-transition:margin-top 1s;
+	    -ms-transition:margin-top 1s;
+	     -o-transition:margin-top 1s;
+	        transition:margin-top 1s;
 }
 menu div{
 	width: 225px;

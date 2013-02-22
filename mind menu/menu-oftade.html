@@ -7,7 +7,7 @@
 </head>
 <body>
 	<nav>
-		<menu id="hideAndDropdown">
+		<menu id="menu">
 			<div></div>
 			<div></div>
 			<div></div>
@@ -16,10 +16,10 @@
 		</menu>
 	</nav>
 	<hr />
-	<figure class="hide" onclick="navHide()"></figure>
+	<figure class="hide" onclick="myFunction()"></figure>
 	<script>
-		function navHide(){
-			getElementById('hideAndDropdown').style.marginTop="-325px";
+		function myFunction(){
+			document.getElementById('menu').style.marginTop="-325px";
 		}
 	</script>
 </body>
