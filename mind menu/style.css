@@ -22,41 +22,48 @@ nav{
 	-webkit-box-shadow: 0px 5px 5px #999;
 	box-shadow: 0px 5px 5px #999;
 }
-nav menu{
+nav menu#menu{
 	width: 950px;
-	margin: 0 auto ;
+	margin: -325px auto 0 auto ;
+	min-height: 280px;
 	padding-top: 50px;
-	height: 270px;
-	padding-bottom: 10px;
-	-webkit-transition:margin-top 1s;
-	   -moz-transition:margin-top 1s;
-	    -ms-transition:margin-top 1s;
-	     -o-transition:margin-top 1s;
-	        transition:margin-top 1s;
+	-webkit-transition:margin-top 300ms;
+	   -moz-transition:margin-top 300ms;
+	    -ms-transition:margin-top 300ms;
+	     -o-transition:margin-top 300ms;
+	        transition:margin-top 300ms;
 }
-menu div{
+menu#menu > li{
 	width: 225px;
 	background: #fff;
 	height: 225px;
-	float: left;
 	margin-right: 12px;
+	list-style-type: none;
+	float: left;
 }
-div.guest{
-	float: none;
-	margin-left: 710px;
-	margin-right: 0px !important;
-}
-hr{
+div.hr{
 	background-color: #2c2a24;
 	height:2px;
-	border:none;
 	margin-top: -10px;
 }
-figure.hide{
+figure#hide{
 	background-image:url("images/logo-navigation.png");
 	background-position:50% -123px;
 	width: 202px;
 	height:50px;
 	margin: -15px auto 0 auto;
 	cursor: pointer;
+	display: none;
+}
+figure#dropDown{
+	background-image:url("images/logo-navigation.png");
+	width: 202px;
+	height:120px;
+	margin: -5px auto 0 auto;
+	transition: margin 500ms;
+	-moz-transition: margin 500ms;
+	-webkit-transition: margin 500ms;
+	-o-transition: margin 500ms;
+	cursor: pointer;
+	display: block;
 }

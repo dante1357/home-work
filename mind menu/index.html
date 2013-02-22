@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>menu</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<nav>
+		<menu id="menu">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</menu>
+	</nav>
+	<div class="hr"></div>
+	<figure id="hide" onclick="goUp()"></figure>
+	<figure id="dropDown" onclick="goDown()"></figure>
+	<script>
+		function goUp(){
+			document.getElementById('menu').style.marginTop="-325px";
+			document.getElementById('hide').style.marginTop="-50px";
+			window.setTimeout(function() {
+				document.getElementById('dropDown').style.display="block";
+				window.setTimeout(function(){
+					document.getElementById('dropDown').style.marginTop="-5px";
+				}, 250);
+    		}, 250);
+		}
+		function goDown(){
+			document.getElementById('dropDown').style.marginTop="-120px";
+			window.setTimeout(function(){
+					document.getElementById('dropDown').style.display="none";
+					window.setTimeout(function(){
+						document.getElementById('menu').style.marginTop="0px";
+						document.getElementById('hide').style.marginTop="-15px";
+						document.getElementById('hide').style.display="block";
+					}, 250);
+			}, 250);
+			
+		}
+	</script>
+</body>
+</html>
