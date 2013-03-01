@@ -1,0 +1,58 @@
+.container
+	position relative
+	overflow hidden
+	min-height 750px
+menu
+	margin 50px auto 0
+	padding 0
+	width 330px
+menu li
+	background-color #390
+	padding 10px 7px
+	float left
+	margin-right 3px
+	color #fff
+	cursor pointer
+	transition all 500ms 
+menu li:last-child
+	margin-right 0
+menu li:hover
+	background-color #064
+section.pages
+	width 950px
+	height 600px
+	position absolute
+	transition all 1500ms 
+	opacity 0 
+section.aboutMe
+	background-color #333
+	left -1000px
+	top 100px
+.page1 section.pages.aboutMe
+	left 0
+	top 100px
+	opacity 1
+section.resume
+	background-color #666
+	left 0px
+	top 1000px
+.page2 section.pages.resume
+	left 0px
+	top 100px
+	opacity 1
+section.portfolio
+	background-color #999
+	left 1000px
+	top 100px
+.page3 section.pages.portfolio
+	left 0px
+	top 100px
+	opacity 1
+section.contactMe
+	background-color #ccc
+	left 0px
+	top -1000px
+.page4 section.pages.contactMe
+	opacity 1
+	left 0px
+	top 100px
