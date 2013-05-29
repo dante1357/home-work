@@ -1,0 +1,28 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-color: #999;
+}
+div{
+	width: 110px;
+	height: 35px;
+	background-color: #390;
+	color: #fff;
+	line-height: 35px;
+	text-align: center;
+	font-family: 'Medula One', cursive;
+	font-size: 28px;
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	cursor: pointer;
+	-webkit-transition: all 100ms;
+	   -moz-transition: all 100ms;
+	    -ms-transition: all 100ms;
+	     -o-transition: all 100ms;
+	        transition: all 100ms;
+}

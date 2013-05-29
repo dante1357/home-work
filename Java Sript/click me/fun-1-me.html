@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>click me * 5</title>
+	<link href='http://fonts.googleapis.com/css?family=Medula+One' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="fun-1-css.css" type="text/css">
+</head>
+<body>
+	<div id="div1">Follow Me! :)</div>
+	<div id="div2">Follow Me! :)</div>
+	<div id="div3">Follow Me! :)</div>
+	<div id="div4">Follow Me! :)</div>
+	<div id="div5">Click Me! :)</div>
+<script>
+	var div1 = document.getElementById('div1');
+	var div2 = document.getElementById('div2');
+	var div3 = document.getElementById('div3');
+	var div4 = document.getElementById('div4');
+	var div5 = document.getElementById('div5');
+	function moveIt () {
+		div5.innerHTML  = 'Follow Me! :)';
+		window.setInterval(function () {
+			div1.style.top = Math.random()*90 + '%';
+			div1.style.left = Math.random()*90 + '%';
+			div2.style.top = Math.random()*90 + '%';
+			div2.style.left = Math.random()*90 + '%';
+			div3.style.top = Math.random()*90 + '%';
+			div3.style.left = Math.random()*90 + '%';
+			div4.style.top = Math.random()*90 + '%';
+			div4.style.left = Math.random()*90 + '%';
+			div5.style.top = Math.random()*90 + '%';
+			div5.style.left = Math.random()*90 + '%';
+		} , 500 );
+	};
+	div5.onclick = moveIt;
+</script>
+</body>
+</html>
