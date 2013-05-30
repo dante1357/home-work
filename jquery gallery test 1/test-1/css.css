@@ -1,0 +1,97 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+body{
+  background-color: #222;
+  font-family: "wf_SegoeUILight","wf_SegoeUI","Segoe UI Light","Segoe WP Light","Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+}
+.container{
+  width: 950px;
+  margin: auto;
+}
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background-color: #086fa1;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  line-height: 120px;
+  font-size: 36px;
+  z-index: 2;
+}
+.gallery{
+ margin-top: 100px; 
+}
+figure{
+  float: left;
+  width: 230px;
+  height: 250px;
+  margin: 42px 42px;
+  cursor: pointer;
+}
+figure div {
+  background-color: #ff8900;
+  background-image: url('images/zoom.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 230px;
+  height: 250px;
+  opacity: 0;
+}
+nav{
+  position: fixed;
+  right: 10px;
+  top: 120px;
+}
+li{
+  list-style-type: none;
+  width: 120px;
+  height: 120px;
+  background-color: #ff8900;
+  text-align: center;
+  line-height: 120px;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 26px;
+  cursor: pointer;
+}

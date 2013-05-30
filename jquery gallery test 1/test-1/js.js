@@ -1,0 +1,48 @@
+/*jshint strict:true, noarg:true, noempty:true, eqeqeq:true, bitwise:true, undef:true, unused:true, nonew:true, browser:true, devel:true, boss:true, curly:false, immed:false, latedef:true, newcap:true, plusplus:false, trailing:true, debug:false, asi:false, evil:false, expr:true, eqnull:false, esnext:false, funcscope:false, globalstrict:false, loopfunc:false */
+$(document).ready(function(){
+  "use strict";
+  $('figure div').mouseenter(function(){
+    $(this).stop(true,true).fadeTo();
+    $(this).fadeTo('fast',1);
+  }).mouseleave(function(){
+    $(this).stop(true,true).fadeTo();
+    $(this).fadeTo('fast',0);
+  });
+  $('li').mouseenter(function(){
+     $(this).stop(true,true);
+    $(this).transition({scale:1.1});
+  }).mouseleave(function(){
+    $(this).stop(true,true);
+    $(this).transition({scale:1});
+  });
+  $('.mps').click(function(){
+    $('.movie').show('slow');
+    $('.game').hide('slow');
+    $('.cg').hide('slow');
+    $('.nature').hide('slow');
+  });
+  $('.gps').click(function(){
+    $('.game').show('slow');
+    $('.movie').hide('slow');
+    $('.cg').hide('slow');
+    $('.nature').hide('slow');
+  });
+  $('.cgps').click(function(){
+    $('.cg').show('slow');
+    $('.game').hide('slow');
+    $('.movie').hide('slow');
+    $('.nature').hide('slow');
+  });
+  $('.nps').click(function(){
+    $('.nature').show('slow');
+    $('.game').hide('slow');
+    $('.cg').hide('slow');
+    $('.movie').hide('slow');
+  });
+  $('.all').click(function(){
+    $('.nature').show('slow');
+    $('.game').show('slow');
+    $('.cg').show('slow');
+    $('.movie').show('slow');
+  });
+});
