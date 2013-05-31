@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>toMuchDivs!</title>
+	<script type="text/javascript">
+		var boxs = document.getElementsByClassName('boxs');
+		function createRandomColor(){
+			return Math.floor(Math.random()*256);
+		}
+		function changeColors(){
+			var rgb = 'rgb('+createRandomColor()+','+createRandomColor()+','+createRandomColor()+')';
+			return (rgb);
+		}
+		window.onload=function(){
+			for (var i = 0; i < boxs.length; i++) {
+				boxs.item(i).onmouseover=function(){
+					this.style.top = Math.random() * 90 + '%';
+					this.style.left = Math.random() * 90 + '%';
+					this.style.backgroundColor = changeColors();
+					this.style.color = changeColors();
+					document.body.style.backgroundColor = changeColors();
+				}
+			};	
+		}
+	</script>
+	<link rel="stylesheet" href="css.css" type="text/css">
+</head>
+<body>
+	<script type="text/javascript">
+		for(var i = 0 ; i< Math.floor( Math.random() * 150 + 1 ) ; i++){
+			document.write('<div class="boxs">Click Me</div>');
+		}
+	</script>
+</body>
+</html>
