@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Balls</title>
+	<script type="text/javascript">
+		var balls = document.getElementsByClassName('balls');
+		
+		window.onload=function(){
+			for (var i = 0; i < balls.length; i++) {
+				balls.item(i).style.webkitTransform = "rotate("+Math.random()*180+"deg)";
+				balls.item(i).style.top = Math.random() * 85 + '%';
+				balls.item(i).style.left = Math.random() * 85 + '%';
+				balls.item(i).onmouseover = function(){
+					this.style.webkitTransform = "rotate("+Math.random()*180+"deg)";
+					this.style.top = Math.random() * 85 + '%';
+					this.style.left = Math.random() * 85 + '%';
+				}
+			};
+		}
+	</script>
+	<link rel="stylesheet" href="css.css" type="text/css">
+</head>
+<body>
+	<script type="text/javascript">
+		for(var i = 0 ; i< Math.floor( Math.random() * 50 + 1 ) ; i++){
+			document.write('<div class="balls"></div>');
+		}
+	</script>
+</body>
+</html>

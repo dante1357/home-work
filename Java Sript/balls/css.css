@@ -1,0 +1,23 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-image: url('grass_dry-copie.jpg');
+}
+div.balls{
+	width: 200px;
+	height: 200px;
+	-webkit-border-radius: 100px;
+	        border-radius: 100px;
+	background-image: url('ball.jpg');
+	position: absolute;
+	top: 45%;
+	left: 45%;
+	-webkit-transition: all 500ms;
+	   -moz-transition: all 500ms;
+	    -ms-transition: all 500ms;
+	     -o-transition: all 500ms;
+	        transition: all 500ms;
+	cursor: pointer;
+}
