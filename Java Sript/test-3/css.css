@@ -1,0 +1,163 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+/* ********************** shorue css ha! ********************** */
+html,body{
+  width: 100%;
+  height: 100%;
+  font-family: "wf_SegoeUILight","wf_SegoeUI","Segoe UI Light","Segoe WP Light","Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+}
+/* ********************************* shorue menu! ********************************* */
+.season{
+  list-style-type: none;
+  position: fixed;
+  z-index: 1;
+}
+.season > li{
+  width: 200px;
+  height: 50px;
+  font-size: 48px;
+  cursor: pointer;
+  line-height: 50px;
+  margin-top: 5px;
+  margin-left: 15px;
+  text-shadow: 1px 1px 5px #000;
+}
+.season > li > a{
+  color: #FFF;
+  text-decoration: none;
+}
+/* ********************************* payane menu! ********************************* */
+
+/* ********************** shorue slideshow va mokhalafatesh! ********************** */
+.slideshow{
+  background-size: cover;
+  background-position: center center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.slideshow .op{
+  height: inherit;
+  opacity: 0.5;
+  cursor: default;
+}
+.slideshow .train{
+  height: inherit;
+  position: absolute;
+}
+.train div{
+  height: inherit;
+  float: left;
+}
+.slideshow h1{
+  font-size: 84px;
+  position: absolute;
+  top: 45%;
+  left: 44%;
+  color: #fff;
+}
+
+/* ********************** shorue dokme haye next o prev! ********************** */
+.next,
+.prev{
+  position: absolute;
+  font-size: 100px;
+  top: 45%;
+  color:#fff;
+  width: 50px;
+  text-shadow: 1px 1px 5px #000;
+}
+.next{
+  right: 15px;
+}
+.prev{
+  left: 15px;
+}
+/* ********************** payane dokme haye next o prev! ********************** */
+
+/* ********************** shorue dokme haye paine slideshow! ********************** */
+.btns li{
+  position: absolute;
+  bottom: 20px;
+  font-size: 40px;
+  text-shadow: none;
+  color: #BCBCBC;
+  opacity: 0.5;
+  -webkit-transition: all 500ms;
+     -moz-transition: all 500ms;
+      -ms-transition: all 500ms;
+       -o-transition: all 500ms;
+          transition: all 500ms;
+}
+.btns li:hover,
+.btns .active{
+  opacity: 1;
+  color: #336E93;
+}
+.li1{
+  right: 200px;
+}
+.li2{
+  right: 140px;
+}
+.li3{
+  right: 80px;
+}
+.li4{
+  right: 20px;
+}
+/* ********************** payane dokme haye paine slideshow! ********************** */
+
+/* ********************** payane slideshow va mokhalafatesh! ********************** */
+
+/* ********************** shorue rize kari haye har fasl! ********************** */
+.spring > .op{
+  background-color: #FF47FE;
+}
+.summer > .op{
+  background-color: #47FFFE;
+}
+.fall > .op{
+  background-color: #FF4747;
+}
+.winter > .op{
+  background-color: #A3A3A3;
+}
+/* ********************** payane rize kari haye har fasl! ********************** */
