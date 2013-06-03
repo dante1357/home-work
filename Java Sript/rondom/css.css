@@ -1,0 +1,33 @@
+body{
+  background-color: #fff;
+  -webkit-transition: all 200ms;
+     -moz-transition: all 200ms;
+      -ms-transition: all 200ms;
+       -o-transition: all 200ms;
+          transition: all 200ms;
+}
+.boxs{
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+  -webkit-transition: all 200ms;
+     -moz-transition: all 200ms;
+      -ms-transition: all 200ms;
+       -o-transition: all 200ms;
+          transition: all 200ms;
+}
+.boxs .innerdiv{
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-transition: all 200ms;
+     -moz-transition: all 200ms;
+      -ms-transition: all 200ms;
+       -o-transition: all 200ms;
+          transition: all 200ms;
+}

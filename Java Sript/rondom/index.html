@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>game</title>
+  <link rel="stylesheet" href="css.css" type="text/css">
+</head>
+<body>
+  <script type="text/javascript">
+    function rnd(a,b){
+      return Math.floor(Math.random()*(b-a+1))+a;
+    }
+    function randColor(h,s,l){
+      return "hsl("+h+","+s+"%,"+l+"%)";
+    }
+
+    for (var i = 0; i < 1000; i++) {
+      document.write('<div class="boxs"></div>');
+      boxs = document.querySelectorAll('div.boxs');
+      boxs.item(i).onmouseover = function change1(){
+        this.style.backgroundColor = randColor(rnd(0,359),rnd(80,100),rnd(30,50));
+      }
+      boxs.item(i).onmouseout = function change2(){
+       this.style.backgroundColor = 'black';
+      }
+      boxs.item(i).onclick = function change3(){
+        for (var j = 0; j < 50; j++) {
+          this.innerHTML += "<div class='innerdiv'></div>" ;
+          innerdiv = document.querySelectorAll('div.innerdiv');
+          innerdiv.item(j).style.backgroundColor = randColor(rnd(0,359),rnd(80,100),rnd(30,50));
+          this.style.width = 0;
+          this.style.height = 0;
+          this.style.position = 'relative';
+          this.style.marginRight = 0;
+          innerdiv.item(j).style.top = rnd(-50,50) + 'px';
+          innerdiv.item(j).style.left = rnd(-50,50) + 'px';
+        };
+      }
+    };
+  </script>
+</body>
+</html>
