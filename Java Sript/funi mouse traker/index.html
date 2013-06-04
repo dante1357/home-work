@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css.css" type="text/css">
+</head>
+<body>
+  <script type="text/javascript">
+    function rnd(a,b){
+            return Math.floor(Math.random()*(b-a+1))+a;
+    }
+    function hsl(h,s,l){
+        return "hsl("+h+","+s+"%,"+l+"%)";
+    }
+    var avilY = innerHeight,
+        avilX = innerWidth,
+        numOfDivs =(avilY/40)*(avilX/40);
+    for (var i = 0; i < numOfDivs; i++) {
+        document.write('<div></div>')
+    };
+    var divs = document.getElementsByTagName('div');
+    for (var i = 0; i < numOfDivs; i++) {
+      divs.item(i).onmouseover = function(){
+        this.style.backgroundColor = hsl(rnd(0,359),rnd(90,100),rnd(40,50));
+        this.style.webkitTransform = 'rotate(' + rnd(0,360)+'deg)';
+      };
+      divs.item(i).onmouseout = function(){
+        this.style.backgroundColor = 'black';
+        this.style.webkitTransform = 'rotate(0deg)';
+      };
+    };
+  </script>
+</body>
+</html>

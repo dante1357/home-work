@@ -1,0 +1,15 @@
+body{
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+}
+div{
+  float: left;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: all 100ms;
+     -moz-transition: all 100ms;
+      -ms-transition: all 100ms;
+       -o-transition: all 100ms;
+          transition: all 100ms;
+}
