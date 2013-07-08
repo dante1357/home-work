@@ -1,0 +1,42 @@
+/*
+Theme Name: My WordPress Theme
+Theme URI: http://c9w4dante.com
+Author: Mansoor Masoudifard
+Author URI: http://masoudifard.com
+Description: Wordpress Theme for W4 class.
+Version: 0.1.0
+*/
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: #ccc;
+}
+.container{
+  width: 950px;
+  background-color: #FFF;
+  margin: 0 auto 20px auto;
+}
+nav{
+  height: 50px;
+  background-color: #333;
+  color: #FFF;
+}
+header{
+  height: 150px;
+}
+.slideshow{
+  height: 400px;
+  background-image: url('images/naruto.jpg');
+}
+.content{
+  min-height: 500px;
+  padding: 10px;
+  font-size: 18px;
+  line-height: 25px;
+}
+footer{
+  height: 70px;
+  background-color: #666;
+}
