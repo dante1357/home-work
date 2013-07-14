@@ -1,0 +1,137 @@
+/*
+Theme Name: My Theme
+Theme URI: http://google.com/
+Author: Mansoor Masoudifard
+Author URI: http://google.com/
+Description: Wordpress Theme for learning.
+Version: 0.1
+*/
+/* *********************** start css reset  ************************* */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+/* *********************** end css reset  ************************* */
+body{
+  font-family: "wf_SegoeUILight","wf_SegoeUI","Segoe UI Light","Segoe WP Light","Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+  color: #FFF;
+}
+/* *********************** start Header ************************* */
+header{
+  background-color: #22B14C;
+  height: 150px;
+}
+header > div{
+  width: 950px;
+  margin: auto;
+}
+/* *********************** start your name ************************* */
+.yourName{
+  float: left;
+  width: 300px;
+}
+.yourName h1{
+  font-size: 46px;
+  margin-top: 25px;
+}
+.yourName h2{
+  font-size: 24px;
+  margin-top: 20px;
+}
+/* *********************** end your name ************************* */
+/* *********************** start menu ************************* */
+nav menu{
+  width: 500px;
+  margin-left: auto;
+  list-style-type: none;
+}
+menu li {
+  float: left;
+  margin-top: 60px; 
+}
+menu li a {
+  text-decoration:none;
+  display: block;
+  width: 150px;
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+  color: #FFF;
+  font-size: 24px;
+}
+menu li a:hover{
+  background-color: #93DC2A;
+}
+/* *********************** end menu ************************* */
+/* *********************** end Header ************************* */
+
+/* *********************** start slideshow ************************* */
+.slideshow{
+  height: 530px;
+  background-image: url('images/Iron-man-3a.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+      -ms-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+/* *********************** end slideshow ************************* */
+
+/* *********************** start content ************************* */
+.content article{
+  width: 950px;
+  min-height: 500px;
+  margin: 50px auto ;
+  color: #000;
+}
+/* *********************** end content ************************* */
+
+/* *********************** start footer ************************* */
+footer{
+  background-color: #217b95;
+  height: 300px;
+}
+footer > div{
+  width: 950px;
+  margin: auto;
+  line-height: 300px;
+  text-align: center;
+  font-size: 50px;
+}
+/* *********************** end footer ************************* */
