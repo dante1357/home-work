@@ -1,31 +1,25 @@
 <div id="preloader-container">
 <div id="container">
 <?php 
-
-$arg = array(
-    'type' => 'post',
-    'orderby' => 'name',
-    'order' => 'ASC',
-    'hide_empty' => True
-  );
-  $all_categories = get_categories( $arg );
-
   $args = array (
-      'post_type'=>'post',
+      'post_type'=>'portfolio',
+      'nopaging'=>'false',
       'order'=>'ASC'
     );
   $query = new WP_Query($args);
 
-if($query->have_posts()){
-  while($query->have_posts()){
-    foreach($all_categories as $category) {
-      $class_name = "portfolio";
-      $class_name  .= " " . $category->slug;
-
-      $query->the_post();
+ if($query->have_posts()){
+    while($query->have_posts()){
+      $class_name ='portfolio';
+      $query->the_post(); 
+      $types = get_the_terms($post->ID,'type');
+      if($types){
+        foreach($types as $type) {
+          $class_name .= " BF_".$type->slug;
+        }
+      }
 ?>
-  
-  <div class="widget web homepage <?php echo $class_name;?>">
+  <div class="widget web homepage <?php echo $class_name; ?>">
     <div class="entry-container span4">
     
       <!-- Portfolio Image -->
@@ -61,8 +55,7 @@ if($query->have_posts()){
   </div>
 <?php
   }
-  } //END WHILE
-  } //END IF
+  }
   wp_reset_postdata();
 ?>
 </div>

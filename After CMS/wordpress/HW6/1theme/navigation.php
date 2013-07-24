@@ -2,14 +2,18 @@
 ================================================== -->
 <!-- This is the logo and navigation -->
 <?php
-  $args = array(
-    'type' => 'post',
-    'orderby' => 'name',
-    'order' => 'ASC',
-    'hide_empty' => True
-  );
-  $all_categories = get_categories( $args );
+
+ 	$taxonomies = array('type');
+
+	$args = array(
+	  'orderby' => 'name',
+	  'order' => 'ASC',
+	  'hide_empty' => True
+	);
+
+	$all_types = get_terms( $taxonomies, $args );
 ?>
+
 	<div class="navigation">
 		<nav>
 			
@@ -33,11 +37,9 @@
 						<a href="#filter=.portfolio" class="selected"><span data-toggle="collapse" data-target="#portfolio-collapse"></span>نمونه کارها</a>
 						<ul id="portfolio-collapse" class="collapse out">
 							<?php
-								foreach($all_categories as $category) {
-							?>
-									<li><a href="#filter=.<?php echo $category->slug; ?>"><?php echo $category->name; ?></a></li>
-							<?php
-							 } 
+								foreach($all_types as $type) {
+									echo "<li><a href='#filter=.BF_$type->slug'> $type->name </a></li>";
+							 	} 
 							?>
 						</ul>
 					</li>
